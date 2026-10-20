@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Syafrul's personal portfolio: projects, skills and contact details.">
+  <title>Syaf On Net | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <!-- ===== NAVIGATION ===== -->
+  <header class="nav">
+    <div class="nav-inner">
+      <a class="logo" href="#home">Syaf On Net</a>
+      <button id="menuBtn" class="btn small" aria-expanded="false" aria-controls="menu">Menu</button>
+      <nav id="menu" aria-label="Main">
+        <a href="#home">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#about">About Me</a>
+        <a href="#contact">Contact</a>
+        <button id="themeBtn" class="btn small" aria-pressed="false">Dark mode</button>
+      </nav>
+    </div>
+    <div id="progress" aria-hidden="true"></div>
+  </header>
+
+  <main id="main">
+
+    <!-- ===== HOME ===== -->
+    <section id="home" class="hero">
+      <img class="avatar"
+           alt="Placeholder portrait: a cream circle with the letter S. Replace with your own photo."
+           src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='50' fill='%23b23a48'/%3E%3Ctext x='50' y='66' font-size='50' text-anchor='middle' fill='%23fff8f0' font-family='Georgia'%3ES%3C/text%3E%3C/svg%3E">
+      <h1>Hiyaa! I'm Syafrul.</h1>
+      <p class="typing">I'm a <span id="typed" class="highlight"></span><span aria-hidden="true">|</span></p>
+      <p>Made this while re-learning HTML, so be nice. As they say... we listen, we don't judge :)</p>
+      <p>
+        <a class="btn" href="#projects">See my projects</a>
+        <a class="btn alt" href="#contact">Get in touch</a>
+      </p>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <p>Sample projects, so swap in your own. Use the buttons to filter.</p>
+
+      <div class="filters" role="group" aria-label="Filter projects">
+        <button class="btn small active" data-filter="all" aria-pressed="true">All</button>
+        <button class="btn small" data-filter="web" aria-pressed="false">Web</button>
+        <button class="btn small" data-filter="js" aria-pressed="false">JavaScript</button>
+        <button class="btn small" data-filter="data" aria-pressed="false">Data</button>
+      </div>
+
+      <div class="grid">
+        <article class="card reveal" data-cat="web">
+          <div class="thumb" role="img" aria-label="Screenshot placeholder for Personal Homepage">🏠</div>
+          <h3>Personal Homepage</h3>
+          <p>My first HTML and CSS page: intro, hobbies, favourite foods and goals.</p>
+          <a href="#" target="_blank" rel="noopener">View project (replace link)</a>
+        </article>
+        <article class="card reveal" data-cat="js">
+          <div class="thumb" role="img" aria-label="Screenshot placeholder for Badminton Score Tracker">🏸</div>
+          <h3>Badminton Score Tracker</h3>
+          <p>Tracks points, serves and game winners for friendly matches. Built with vanilla JavaScript.</p>
+          <a href="#" target="_blank" rel="noopener">View project (replace link)</a>
+        </article>
+        <article class="card reveal" data-cat="web">
+          <div class="thumb" role="img" aria-label="Screenshot placeholder for Fragrance Collection Catalogue">🧴</div>
+          <h3>Fragrance Catalogue</h3>
+          <p>A searchable gallery of my perfume collection with notes, brands and ratings.</p>
+          <a href="#" target="_blank" rel="noopener">View project (replace link)</a>
+        </article>
+        <article class="card reveal" data-cat="data">
+          <div class="thumb" role="img" aria-label="Screenshot placeholder for F1 Stats Dashboard">🏎️</div>
+          <h3>F1 Stats Dashboard</h3>
+          <p>Charts of lap times and championship points from a public dataset.</p>
+          <a href="#" target="_blank" rel="noopener">View project (replace link)</a>
+        </article>
+        <article class="card reveal" data-cat="js">
+          <div class="thumb" role="img" aria-label="Screenshot placeholder for Internship Tracker">📋</div>
+          <h3>Internship Tracker</h3>
+          <p>A to-do style board for applications, deadlines and interview dates.</p>
+          <a href="#" target="_blank" rel="noopener">View project (replace link)</a>
+        </article>
+        <article class="card reveal" data-cat="data">
+          <div class="thumb" role="img" aria-label="Screenshot placeholder for Food Ranking Survey">🍜</div>
+          <h3>Food Ranking Survey</h3>
+          <p>Surveyed friends on favourite local noodles and visualised the results.</p>
+          <a href="#" target="_blank" rel="noopener">View project (replace link)</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section id="about">
+      <h2>About Me</h2>
+
+      <div class="box reveal">
+        <h3>Me Little Intro For Ya</h3>
+        <p>I'm a <span class="highlight">25-year-old</span> student in UNIMAS, Sarawak. While the sun's up I attend classes, and at night I could be playing badminton, socialising, or watching whatever I'd like.</p>
+        <p>I love morning dews, despise the heat though, and I fancy blueberries.</p>
+      </div>
+
+      <div class="two-col">
+        <div class="box reveal">
+          <h3>Skills</h3>
+          <ul class="tags">
+            <li>HTML</li><li>CSS</li><li>JavaScript</li><li>Git</li><li>Teamwork</li><li>Problem solving</li>
+          </ul>
+          <h3>Things I Love</h3>
+          <ul>
+            <li>Playing badminton, obviously</li>
+            <li>Collecting fragrances</li>
+            <li>Watching F1</li>
+            <li>Sidemen's YouTube channel</li>
+            <li>Out with friends</li>
+          </ul>
+        </div>
+
+        <div class="box reveal">
+          <h3>Education &amp; Experience</h3>
+          <ul class="timeline">
+            <li><strong>BSc (Your Course), UNIMAS</strong><br>2023 to present (replace)</li>
+            <li><strong>Intern, Company Name</strong><br>Target: next semester (replace)</li>
+            <li><strong>Club Committee Member</strong><br>Organised events and tournaments (replace)</li>
+          </ul>
+          <h3>Top-Tier Foods</h3>
+          <ol>
+            <li>Kampua Mee (red flavour)</li>
+            <li>Pretzels</li>
+            <li>Yootiao</li>
+            <li>Cantonese Mee</li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="box reveal">
+        <h3>Goals This Year</h3>
+        <ul>
+          <li>Get through this online semester.</li>
+          <li>Add 5 more to my Dubai perfume collection.</li>
+          <li>Secure an internship before next semester.</li>
+          <li>Road trip with friends to end the year.</li>
+          <li>Play Karts again.</li>
+        </ul>
+        <p><em>"Start where you are. Use what you have. Do what you can."</em></p>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email me at <a href="mailto:your.email@example.com">your.email@example.com</a> or use the form (front-end demo only).</p>
+
+      <form id="form" class="box" novalidate>
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" autocomplete="name" required>
+        <span class="err" id="nameErr" role="alert"></span>
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" autocomplete="email" required>
+        <span class="err" id="emailErr" role="alert"></span>
+
+        <label for="msg">Message <small id="count">(0/300)</small></label>
+        <textarea id="msg" name="msg" rows="5" maxlength="300" required></textarea>
+        <span class="err" id="msgErr" role="alert"></span>
+
+        <button class="btn" type="submit">Send message</button>
+        <p id="status" role="status"></p>
+      </form>
+
+      <p>
+        <a href="https://www.instagram.com" target="_blank" rel="noopener">Instagram</a> ·
+        <a href="https://www.youtube.com" target="_blank" rel="noopener">YouTube</a> ·
+        <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+      </p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Thanks for stopping by &hearts;<br>&copy; <span id="year">2026</span> Syafrul. Made with I don't even know... cause I was asked to I guess? HAHAHAH</p>
+  </footer>
+
+  <button id="topBtn" class="btn small" aria-label="Back to top" hidden>↑ Top</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
