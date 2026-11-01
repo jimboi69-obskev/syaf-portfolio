@@ -143,7 +143,7 @@
         if (error) ok = false;
       });
       if (!ok) { status.textContent = ''; return; }
-      status.textContent = 'Thanks! Your message looks good (demo only, nothing was sent).';
+      status.textContent = 'Thanks! Your message looks good.';
       form.reset();
       count.textContent = '(0/300)';
     });
